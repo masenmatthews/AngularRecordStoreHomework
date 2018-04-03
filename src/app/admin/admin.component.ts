@@ -16,8 +16,8 @@ export class AdminComponent {
   ngOnInit() {
   }
 
-  submitForm(title: string, artist: string, description: string) {
-    var newAlbum: Album = new Album(title, artist, description);
+  submitForm(title: string, artist: string, description: string, id: number) {
+    var newAlbum: Album = new Album(title, artist, description, id);
     this.albumService.addAlbum(newAlbum);
   }
 
